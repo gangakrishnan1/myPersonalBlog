@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    width:100%;
+    height:70px;
+    background:orange;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    position:fixed;  /* stays fixed */
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* LEFT search icon */
+.nav-left{
+    font-size:26px;
+    cursor:pointer;
+}
+
+/* TITLE center */
+.nav-title{
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    flex:1;
+    margin-left:20px;
+}
+
+/* RIGHT logo */
+.nav-right img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:50%;
+}
