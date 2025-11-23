@@ -9,13 +9,13 @@
 .navbar{
     width:100%;
     height:70px;
-    background:orange;
+    background:#ff7b00;
     color:white;
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:0 20px;
-    position:fixed;  /* stays fixed */
+    position:fixed;
     top:0;
     left:0;
     z-index:1000;
@@ -23,8 +23,9 @@
 }
 
 /* LEFT search icon */
-.nav-left{
-    font-size:26px;
+.nav-left img{
+    width:26px;
+    height:26px;
     cursor:pointer;
 }
 
@@ -37,10 +38,10 @@
     margin-left:20px;
 }
 
-/* RIGHT logo */
+/* RIGHT logo square */
 .nav-right img{
     width:55px;
     height:55px;
     object-fit:cover;
-    border-radius:50%;
+    border-radius:0; /* square */
 }
