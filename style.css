@@ -48,3 +48,21 @@
     object-fit: cover;
     border-radius: 0; /* Square */
 }
+/* Hide search box initially */
+#searchBox {
+    display: none;
+    width: 200px;
+    height: 34px;
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Show search box when active class is added */
+#searchBox.active {
+    display: inline-block;
+}
+
