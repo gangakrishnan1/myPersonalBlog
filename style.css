@@ -52,7 +52,7 @@ body:has(.hero-section:below) .blog-navbar {
   width: 100%;
   height: 600px;
   object-fit: cover;
-  animation: heroSlide 2.2s ease-out forwards;
+  animation: heroSlide 1.2s ease-out forwards;
 }
 
 /* slide effect */
@@ -63,4 +63,48 @@ body:has(.hero-section:below) .blog-navbar {
 
 .hero-title {
   z-index: 10;
+}
+
+.hero-banner-two {
+  margin-top: -80px; /* overlaps a little with above image */
+  position: relative;
+  z-index: 5;
+}
+
+.banner-box {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+.banner-img {
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+  transition: transform 0.4s ease-in-out; /* smooth animation */
+}
+
+.banner-img:hover {
+  transform: scale(1.05); /* slight zoom (not too much) */
+}
+
+.banner-box {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.hero-carousel-img {
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover zoom inside but no layout change */
+.hero-carousel-img:hover {
+  transform: scale(1.06);
+}
+
+/* Make it more premium */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1);
 }
